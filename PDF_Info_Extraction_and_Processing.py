@@ -126,7 +126,7 @@ def process_file(pdf_path):
 
         # Generate the destination folder based on DealerName
         dealer_folder = sanitize_text(DealerName)  # Sanitize the DealerName for folder naming
-        destination_folder = f'/Users/darrylmcgraw/Desktop/Test Directory/Output Folder/{dealer_folder}' # Replace with output folder path
+        destination_folder = f'/ your output folder path here /{dealer_folder}' # Replace with output folder path
 
         # Create the dealer-specific folder if it doesn't exist
         os.makedirs(destination_folder, exist_ok=True)
@@ -136,7 +136,7 @@ def process_file(pdf_path):
         
  # Run the script       
 if __name__ == "__main__":
-    folder_to_watch = '/Users/darrylmcgraw/Desktop/Test Directory/Input Folder'  # Replace with folder to monitor
+    folder_to_watch = '/ your input folder path here'  # Replace with folder to monitor
 
     event_handler = MyHandler()
     observer = Observer()
